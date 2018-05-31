@@ -9,7 +9,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Let us learn Element-ui'
+      msg: 'Let us learn root'
     }
   }
 }
