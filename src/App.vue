@@ -16,7 +16,7 @@
                         <el-input placeholder="请输入内容" v-model="input11" clearable> </el-input>
                       </div>
                       <el-row>
-                        <el-button>登录</el-button>
+                        <el-button type="primary" plain>登录</el-button>
                       </el-row>
                     </el-tab-pane>
                     <el-tab-pane label="微信" name="second">微信</el-tab-pane>
