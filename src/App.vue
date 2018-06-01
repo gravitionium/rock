@@ -57,8 +57,8 @@
   text-align: center;
 }
 .boxLogin{
-  width: 100%;
-  background:url(assets/loginBg.jpg);
+  /*width: 100%;*/
+  /*background:url(assets/loginBg.jpg) no-repeat center center;*/
 }
 .innerLogin{
   padding:10% 0 10%;
@@ -68,6 +68,7 @@
   border-radius:5px;
   height:450px;
   padding:30px 30px 20px 30px;
+  box-shadow: 3px 3px 30px #999d9c;
 }
 .loginTitle{
   padding:0 0 30px 0;
