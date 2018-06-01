@@ -73,8 +73,9 @@
 .loginTitle{
   padding:0 0 30px 0;
   color: #409EFF;
-  font-size: 30px;
+  font-size: 40px;
   letter-spacing: 5px;
+  font-family: "Times New Roman",Serif;
 }
 .loginMargin{
   margin-bottom:25px;
