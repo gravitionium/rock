@@ -5,7 +5,7 @@
           <el-row>
             <el-col :span="5" :offset="10">
               <div class="containerLogin">
-                <h1 class="loginTitle">I AM ROCK</h1>
+                <h1 class="loginTitle">磐石</h1>
                 <template>
                   <el-tabs v-model="activeName" @tab-click="handleClick">
                     <el-tab-pane label="邮箱登录" name="first">
@@ -72,6 +72,9 @@
 }
 .loginTitle{
   padding:0 0 30px 0;
+  color: #409EFF;
+  font-size: 30px;
+  letter-spacing: 5px;
 }
 .loginMargin{
   margin-bottom:25px;
