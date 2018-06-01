@@ -1,6 +1,6 @@
 # rock
 
-> A Vue.js project
+> 磐石计划
 
 ## Build Setup
 
