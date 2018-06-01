@@ -3,17 +3,17 @@
     <div class="boxLogin">
       <div class="innerLogin">
           <el-row>
-            <el-col :span="5" :offset="10">
+            <el-col :span="7" :offset="8">
               <div class="containerLogin">
                 <h1 class="loginTitle">磐石</h1>
-                <template>
-                  <el-tabs v-model="activeName" @tab-click="handleClick">
+                  <div class="loginContent">
+                    <el-tabs v-model="activeName" @tab-click="handleClick">
                     <el-tab-pane label="邮箱登录" name="first">
                       <div class="loginMargin">
-                        <el-input placeholder="请输入内容" v-model="input10" clearable></el-input>
+                        <el-input placeholder="请输入账户" v-model="input10" clearable suffix-icon="el-icon-date"></el-input>
                       </div>
                       <div class="loginMargin">
-                        <el-input placeholder="请输入内容" v-model="input11" clearable> </el-input>
+                        <el-input placeholder="请输入密码" v-model="input11" clearable suffix-icon="el-icon-date"></el-input>
                       </div>
                       <el-row>
                         <el-button type="primary" plain style="width: 100%" >登录</el-button>
@@ -23,7 +23,7 @@
                     <el-tab-pane label="钉钉" name="third">钉钉</el-tab-pane>
                     <el-tab-pane label="企业微信" name="fourth">企业微信</el-tab-pane>
                   </el-tabs>
-                </template>
+                  </div>                
               </div>
             </el-col>
           </el-row>
@@ -61,7 +61,7 @@
   /*background:url(assets/loginBg.jpg) no-repeat center center;*/
 }
 .innerLogin{
-  padding:10% 0 10%;
+  padding:5% 0 10%;
 }
 .containerLogin{
   background:#fff;
@@ -72,12 +72,17 @@
 }
 .loginTitle{
   padding:0 0 30px 0;
-  color: #409EFF;
+  /*color: #409EFF;*/
+
   font-size: 40px;
   letter-spacing: 5px;
   font-family: "Times New Roman",Serif;
 }
 .loginMargin{
   margin-bottom:25px;
+}
+.loginContent{
+  width: 80%;
+  margin: 0 auto;
 }
 </style>
