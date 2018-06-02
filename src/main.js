@@ -3,11 +3,11 @@
 import Vue from 'vue'
 import Login from './pages/login.vue'
 import router from './router'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+import iView from 'iview';
+import 'iview/dist/styles/iview.css';
 
 Vue.config.productionTip = false
-Vue.use(ElementUI)
+Vue.use(iView)
 
 /* eslint-disable no-new */
 new Vue({

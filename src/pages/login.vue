@@ -2,31 +2,30 @@
   <div id="app">
     <div class="boxLogin">
       <div class="innerLogin">
-          <el-row>
-            <el-col :span="7" :offset="8">
+          <Row>
+            <Col :span="7" :offset="8">
               <div class="containerLogin">
                 <h1 class="loginTitle">磐石</h1>
                   <div class="loginContent">
-                    <el-tabs v-model="activeName" @tab-click="handleClick">
-                    <el-tab-pane label="邮箱登录" name="first">
-                      <div class="loginMargin">
-                        <el-input placeholder="请输入账户" v-model="input10" clearable icon="icon-test"></el-input>
-                      </div>
-                      <div class="loginMargin">
-                        <el-input placeholder="请输入密码" v-model="input11" clearable suffix-icon="el-icon-date"></el-input>
-                      </div>
-                      <el-row>
-                        <el-button type="primary" plain style="width: 100%" class="rock-touxiang">登录</el-button>
-                      </el-row>
-                    </el-tab-pane>
-                    <el-tab-pane label="微信" name="second">微信</el-tab-pane>
-                    <el-tab-pane label="钉钉" name="third">钉钉</el-tab-pane>
-                    <el-tab-pane label="企业微信" name="fourth">企业微信</el-tab-pane>
-                  </el-tabs>
+                    <Tabs v-model="activeName" @tab-click="handleClick">
+                      <TabPane label="钉钉" name="third">钉钉</TabPane>
+                      <TabPane label="微信" name="second">微信</TabPane>
+                      <TabPane label="邮箱登录" name="first">
+                        <div class="loginMargin">
+                          <Input placeholder="请输入账户" v-model="input10" icon="person"></Input>
+                        </div>
+                        <div class="loginMargin">
+                          <Input placeholder="请输入密码" type=password v-model="input11" icon="locked"></Input>
+                        </div>
+                        <Row>
+                          <Button type="primary" plain style="width: 100%" class="rock-touxiang">登录</Button>
+                        </Row>
+                      </TabPane>
+                    </Tabs>
                   </div>                
               </div>
-            </el-col>
-          </el-row>
+            </Col>
+          </Row>
       </div>
     </div>
   </div>
@@ -80,10 +79,10 @@
   font-family: "Times New Roman",Serif;
 }
 .loginMargin{
-  margin-bottom:25px;
+  margin-bottom:20px;
 }
 .loginContent{
-  width: 80%;
+  width: 71%;
   margin: 0 auto;
 }
 </style>
