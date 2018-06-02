@@ -10,13 +10,13 @@
                     <el-tabs v-model="activeName" @tab-click="handleClick">
                     <el-tab-pane label="邮箱登录" name="first">
                       <div class="loginMargin">
-                        <el-input placeholder="请输入账户" v-model="input10" clearable suffix-icon="el-icon-date"></el-input>
+                        <el-input placeholder="请输入账户" v-model="input10" clearable icon="icon-test"></el-input>
                       </div>
                       <div class="loginMargin">
                         <el-input placeholder="请输入密码" v-model="input11" clearable suffix-icon="el-icon-date"></el-input>
                       </div>
                       <el-row>
-                        <el-button type="primary" plain style="width: 100%" >登录</el-button>
+                        <el-button type="primary" plain style="width: 100%" class="rock-touxiang">登录</el-button>
                       </el-row>
                     </el-tab-pane>
                     <el-tab-pane label="微信" name="second">微信</el-tab-pane>
@@ -49,6 +49,7 @@
   };
 </script>
 <style>
+@import "../assets/icon/iconfont.css";
 *{padding:0px;margin:0px;}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
