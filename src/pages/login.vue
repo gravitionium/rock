@@ -10,10 +10,10 @@
                     <Tabs v-model="activeName" @tab-click="handleClick">
                       <TabPane label="邮箱登录" name="first">
                         <div class="loginMargin">
-                          <Input placeholder="请输入账户" v-model="input10" icon="person"></Input>
+                          <Input placeholder="请输入账户" size="large" v-model="username" icon="person"></Input>
                         </div>
                         <div class="loginMargin">
-                          <Input placeholder="请输入密码" type=password v-model="input11" icon="locked"></Input>
+                          <Input placeholder="请输入密码" size="large" type=password v-model="password" icon="locked"></Input>
                         </div>
                         <Row>
                           <Button type="primary" plain style="width: 100%" class="rock-touxiang">登录</Button>
@@ -37,8 +37,8 @@
     data() {
       return {
         activeName: 'first',
-        input10: '',
-        input11: ''
+        username: '',
+        password: ''
       };
     },
     methods: {
