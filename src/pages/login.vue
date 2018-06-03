@@ -3,13 +3,11 @@
     <div class="boxLogin">
       <div class="innerLogin">
           <Row>
-            <Col :span="7" :offset="8">
+            <Col :xs="{ span: 22, offset:1 }" :sm="{ span: 18, offset: 3 }" :md="{ span: 10, offset: 7 }" :lg="{ span: 8, offset: 8 }">
               <div class="containerLogin">
                 <h1 class="loginTitle">磐石</h1>
                   <div class="loginContent">
                     <Tabs v-model="activeName" @tab-click="handleClick">
-                      <TabPane label="钉钉" name="third">钉钉</TabPane>
-                      <TabPane label="微信" name="second">微信</TabPane>
                       <TabPane label="邮箱登录" name="first">
                         <div class="loginMargin">
                           <Input placeholder="请输入账户" v-model="input10" icon="person"></Input>
@@ -21,6 +19,9 @@
                           <Button type="primary" plain style="width: 100%" class="rock-touxiang">登录</Button>
                         </Row>
                       </TabPane>
+                      <TabPane label="微信" name="second">微信</TabPane>
+                      <TabPane label="钉钉" name="third">钉钉</TabPane>
+                      <TabPane label="企业微信" name="fouth">企业微信</TabPane>
                     </Tabs>
                   </div>                
               </div>
