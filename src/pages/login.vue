@@ -8,6 +8,7 @@
                 <h1 class="loginTitle">磐石</h1>
                   <div class="loginContent">
                     <Tabs v-model="activeName" @tab-click="handleClick">
+                      <TabPane label="微信" name="second">微信</TabPane>
                       <TabPane label="邮箱登录" name="first">
                         <div class="loginMargin">
                           <Input placeholder="请输入账户" size="large" v-model="username" icon="person"></Input>
@@ -19,9 +20,8 @@
                           <Button type="primary" plain style="width: 100%" class="rock-touxiang">登录</Button>
                         </Row>
                       </TabPane>
-                      <TabPane label="微信" name="second">微信</TabPane>
-                      <TabPane label="钉钉" name="third">钉钉</TabPane>
                       <TabPane label="企业微信" name="fouth">企业微信</TabPane>
+                      <TabPane label="钉钉" name="third">钉钉</TabPane>
                     </Tabs>
                   </div>                
               </div>
