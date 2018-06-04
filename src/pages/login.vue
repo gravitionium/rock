@@ -83,7 +83,7 @@ html{font-size:62.5%;}
   margin-bottom:20px;
 }
 .loginContent{
-  width: 90%;
+  width: 88%;
   margin: 0 auto;
 }
 .loginInfo{
