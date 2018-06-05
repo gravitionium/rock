@@ -7,23 +7,25 @@
               <div class="containerLogin">
                   <h1 class="loginTitle">磐石</h1>
                   <div class="loginContent">
-                    <Tabs v-model="activeName" @tab-click="handleClick">
-                      <TabPane label="微信" name="second">微信</TabPane>
-                      <TabPane label="邮箱登录" name="first">
-                        <div class="loginMargin">
-                          <Input placeholder="请输入账户" size="large" v-model="username" icon="person"></Input>
-                        </div>
-                        <div class="loginMargin">
-                          <Input placeholder="请输入密码" size="large" type=password v-model="password" icon="locked"></Input>
-                        </div>
-                        <Row>
-                          <Button type="primary" plain style="width: 100%" class="rock-touxiang">登录</Button>
-                        </Row>
-                      </TabPane>
-                      <TabPane label="钉钉" name="third">钉钉</TabPane>
-                    </Tabs>
+                      <div class="loginMargin">
+                        <Input placeholder="请输入账户" size="large" v-model="username" icon="person"></Input>
+                      </div>
+                      <div class="loginMargin">
+                        <Input placeholder="请输入密码" size="large" type=password v-model="password"  ></Input>
+                      </div>
+                      <Row>
+                        <Button type="primary" plain style="width: 100%" class="rock-touxiang">登录</Button>
+                      </Row>
                   </div>  
                   <p class="loginInfo">忘记密码？<a href="#" class="loginBlue">点这里！</a></p>
+
+                  <div class="loginBottom">
+                    <p>还没账号？<a href="#" class="loginBlue">现在注册！</a></p>
+                  </div>
+              </div>
+              <p class="loginOtherTitle">其他方式登录</p>
+              <<div class="loginOtherBtn">
+                <i class="locked"></i>微信
               </div>
             </Col>
           </Row>
@@ -59,39 +61,64 @@ html{font-size:62.5%;}
   text-align: center;
 }
 .boxLogin{
-  /*width: 100%;*/
-  /*background:url(assets/loginBg.jpg) no-repeat center center;*/
+  width: 100%;
+  background-image:url(https://file.iviewui.com/dist/ddb81d457e66ab31d3a2e7726a5b793a.png);
+  background-size: cover;
+  height: 810px;
+
 }
 .innerLogin{
-  margin:8% auto 10%;
+  padding:12% 0 10%;
 }
 .containerLogin{
   background:#fff;
   border-radius:5px;
-  height:35rem;
-  padding:2rem 3rem 2rem 3rem;
+  padding: 1rem 0 0;
   box-shadow: .3rem .3rem 3rem #999d9c;
 }
 .loginTitle{
-  padding:0 0 30px 0;
-  /*color: #409EFF;*/
-  font-size: 4rem;
+  font-size: 3.4rem;
   letter-spacing: 5px;
   font-family: "Times New Roman",Serif;
+  padding:1.2rem 0 2.2rem 0;
 }
 .loginMargin{
   margin-bottom:20px;
 }
 .loginContent{
-  width: 88%;
+  width: 75%;
   margin: 0 auto;
 }
 .loginInfo{
   font-size: 1.2rem;
-  color:#666;
-  padding:1rem 0;
+  color:#333;
+  padding:1.5rem 0;
 }
 .loginBlue{
-  color:#638fdd;
+  color: #2d8cf0;
+}
+.loginBottom{
+  text-align: center;
+  padding: 1.2rem 0;
+  border-top: 1px solid #ececec;
+}
+.loginBottom>p{
+  color: #000;
+}
+.loginOtherTitle{
+  color: #fff;
+  padding: 2rem 0;
+  font-weight: 500;
+}
+.loginOtherBtn{
+  background: #405a97;
+  padding: .5rem 0;
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.loginOtherBtn:hover{
+  background: #57a3f3;
 }
 </style>
