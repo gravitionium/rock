@@ -11,7 +11,7 @@
                         <Input placeholder="请输入账户" size="large" v-model="username" icon="person"></Input>
                       </div>
                       <div class="loginMargin">
-                        <Input placeholder="请输入密码" size="large" type=password v-model="password"  ></Input>
+                        <Input placeholder="请输入密码" size="large" type=password icon="locked" v-model="password"  ></Input>
                       </div>
                       <Row>
                         <Button type="primary" plain style="width: 100%" class="rock-touxiang">登录</Button>
@@ -24,7 +24,7 @@
                   </div>
               </div>
               <p class="loginOtherTitle">其他方式登录</p>
-              <<div class="loginOtherBtn">
+              <div class="loginOtherBtn">
                 <i class="locked"></i>微信
               </div>
             </Col>
@@ -63,9 +63,12 @@ html{font-size:62.5%;}
 .boxLogin{
   width: 100%;
   background-image:url(https://file.iviewui.com/dist/ddb81d457e66ab31d3a2e7726a5b793a.png);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 810px;
-
+  overflow: hidden;
 }
 .innerLogin{
   padding:12% 0 10%;
@@ -109,10 +112,11 @@ html{font-size:62.5%;}
   color: #fff;
   padding: 2rem 0;
   font-weight: 500;
+  cursor: pointer;
 }
 .loginOtherBtn{
   background: #405a97;
-  padding: .5rem 0;
+  padding: .8rem 0;
   font-size: 1.6rem;
   color: #fff;
   cursor: pointer;
