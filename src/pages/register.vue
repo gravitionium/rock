@@ -7,26 +7,28 @@
                 <h1 class="loginTitle">磐石</h1>
                 <div class="loginContent">
                     <div class="loginMargin">
-                      <Input placeholder="请输入账户" size="large" v-model="username" icon="person"></Input>
+                      <Input placeholder="昵称" size="large" v-model="username" icon="person"></Input>
+                    </div>
+                     <div class="loginMargin">
+                      <Input placeholder="登录邮箱" size="large" v-model="email" icon="email"></Input>
                     </div>
                     <div class="loginMargin">
-                      <Input placeholder="请输入密码" size="large" type=password icon="locked" v-model="password"  ></Input>
+                      <Input placeholder="密码" size="large" type=”password“ v-model="password" icon="key"></Input>
+                    </div>
+                    <div class="loginMargin">
+                      <Input placeholder="确认密码" size="large" type=”password“ v-model="rePassword" icon="key"></Input>
                     </div>
                     <Row>
-                      <Button type="primary" plain style="width: 100%" class="rock-touxiang">登录</Button>
+                      <Button type="primary" plain style="width: 100%" class="rock-touxiang">确认</Button>
                     </Row>
                 </div>  
-                <p class="loginInfo">忘记密码？<a href="#" class="loginBlue">点这里！</a></p>
+                <p class="loginInfo">点击注册表示你已阅读并同意<span>服务条款</span></p>
 
                 <div class="loginBottom">
-                  <p>还没账号？
-                    <router-link to="/register" class="loginBlue">现在注册！</router-link>
+                  <p>已有账号？
+                    <router-link to="/" class="loginBlue">现在登录！</router-link>
                   </p>
                 </div>
-            </div>
-            <p class="loginOtherTitle">其他方式登录</p>
-            <div class="loginOtherBtn">
-              <i class="locked"></i>微信
             </div>
           </Col>
         </Row>
