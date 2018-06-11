@@ -12,7 +12,9 @@
 export default {
 	name: 'App',
 	data() {
-	  
+		return {
+			key:false
+		}
 	},
 	methods: {
 	  
