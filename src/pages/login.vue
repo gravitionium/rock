@@ -13,7 +13,7 @@
                       <Input placeholder="请输入密码" size="large" type=password icon="locked" v-model="password"  ></Input>
                     </div>
                     <Row>
-                      <Button type="primary" plain style="width: 100%" class="rock-touxiang">登录</Button>
+                      <Button type="primary" plain style="width: 100%" class="rock-touxiang" @click="login">登录</Button>
                     </Row>
                 </div>  
                 <p class="loginInfo">忘记密码？<a href="#" class="loginBlue">点这里！</a></p>
@@ -44,8 +44,8 @@
       };
     },
     methods: {
-      handleClick(tab, event) {
-        console.log(tab, event);
+      login:function(){
+        console.log(1);
       }
     }
   };
